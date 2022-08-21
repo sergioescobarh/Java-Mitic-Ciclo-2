@@ -9,8 +9,12 @@ public class CuerpoDeAgua extends ObjetoGeografico {
     private int id;
     private String tipoCuerpoAgua;
     private String tipoAgua;
-    private int IRCA;
+    private Float IRCA;
     //String nivel;
+
+    public CuerpoDeAgua() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     //Métodos:
     //getters y setters
@@ -47,18 +51,18 @@ public class CuerpoDeAgua extends ObjetoGeografico {
         this.tipoAgua = tipoAgua;
     }
 
-    public int getIRCA() {
+    public Float getIRCA() {
         return IRCA;
     }
 
-    public void setIRCA(int IRCA) {
+    public void setIRCA(float IRCA) {
         this.IRCA = IRCA;
     }
     
     
     
     //constructor
-    public CuerpoDeAgua(String nombre, int id, String tipoCuerpoAgua, String tipoAgua, int IRCA, String municipio)
+    public CuerpoDeAgua(String nombre, int id, String tipoCuerpoAgua, String tipoAgua, float IRCA, String municipio)
 {
         super(municipio);
         this.nombre = nombre;
